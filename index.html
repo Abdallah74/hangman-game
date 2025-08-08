@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>- Hangman Game</title>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- Render & Normlize CSS -->
+    <link rel="stylesheet" href="./css/normlize.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-info">
+        <div class="game-name"><h1>Hangman</h1></div>
+        <div class="category">
+          <h2>Word From:</h2>
+          <h4></h4>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="hangman-draw">
+          <div class="the-draw">
+            <div class="the-stand"></div>
+            <div class="the-hang"></div>
+            <div class="the-rope"></div>
+            <div class="the-man">
+              <div class="head"></div>
+              <div class="body"></div>
+              <div class="hands"></div>
+              <div class="legs"></div>
+            </div>
+          </div>
+        </div>
+        <div class="letters"></div>
+      </div>
+      <hr />
+      <div class="letters-guess"></div>
+    </div>
+    <audio id="success" src="./audio/success-1-6297.mp3" preload="auto"></audio>
+    <audio
+      id="fail"
+      src="./audio/failure-drum-sound-effect-2-7184.mp3"
+      preload="auto"></audio>
+    <script src="./src/main.js"></script>
+  </body>
+</html>
